@@ -14,3 +14,11 @@ featuring **transfer learning**, **evaluation with visualization**, and **Tensor
 git clone https://github.com/<your-username>/tf-cats-vs-dogs.git
 cd tf-cats-vs-dogs
 pip install -r requirements.txt
+```
+
+## 🚀 Quick Start
+```bash
+python train.py
+python evaluate.py
+python export_tflite.py
+python predict.py --image path/to/image.jpg
