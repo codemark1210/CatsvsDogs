@@ -1,29 +1,16 @@
-# Cats vs Dogs with TensorFlow (Transfer Learning + TFLite)
+# 🐱🐶 Cats vs Dogs Classification with TensorFlow
 
-A classic, clean, and deployable TensorFlow project:
-- **Task:** Binary image classification (cats vs dogs)
-- **Approach:** Transfer Learning with `MobileNetV2` + simple head
-- **Dataset:** `tfds: cats_vs_dogs`
-- **Deploy:** Export to **TensorFlow Lite** (FP32 & dynamic range quantization)
-- **Extras:** Confusion matrix, sample predictions, training curves
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow)
+![Dataset](https://img.shields.io/badge/Dataset-Cats%20vs%20Dogs-blue?logo=google)
+![Model](https://img.shields.io/badge/Model-MobileNetV2-success)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Platform](https://img.shields.io/badge/Deploy-TFLite-lightgrey?logo=android)
 
-## Quick Start
+A classic **image classification project** built with **TensorFlow** and **Keras**,  
+featuring **transfer learning**, **evaluation with visualization**, and **TensorFlow Lite export** for efficient on-device deployment.
 
+## 📦 Installation
 ```bash
-# 1) Create venv (optional)
-python -m venv .venv && source .venv/bin/activate  # (Windows: .venv\Scripts\activate)
-
-# 2) Install
+git clone https://github.com/<your-username>/tf-cats-vs-dogs.git
+cd tf-cats-vs-dogs
 pip install -r requirements.txt
-
-# 3) Train
-python train.py
-
-# 4) Evaluate (confusion matrix & sample preds saved to assets/)
-python evaluate.py
-
-# 5) Export TFLite (FP32 + dynamic quantized)
-python export_tflite.py
-
-# 6) Single image inference (path to a local image)
-python predict.py --image path/to/your_image.jpg
